@@ -1,0 +1,6 @@
+packages:
+  - cran_mirror: https://cloud.r-project.org
+    num_threads: 4
+    packages:
+      - name: polynom
+      - name: tidyverse

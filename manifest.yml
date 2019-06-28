@@ -1,0 +1,4 @@
+---
+applications:
+- name: cyantemp
+  memory: 3G
