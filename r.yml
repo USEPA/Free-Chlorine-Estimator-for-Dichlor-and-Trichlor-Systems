@@ -3,4 +3,3 @@ packages:
     num_threads: 4
     packages:
       - name: polynom
-      - name: tidyverse
