@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cyant
+- name: fcedts
   memory: 200M
   instances: 3
   routes:
