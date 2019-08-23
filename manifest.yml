@@ -1,4 +1,7 @@
 ---
 applications:
 - name: cyant
-  memory: 768M
+  memory: 200M
+  instances: 3
+  routes:
+  - route: fcedts.apps.internal
