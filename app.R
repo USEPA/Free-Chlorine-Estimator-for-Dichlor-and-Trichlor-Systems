@@ -69,6 +69,9 @@ Free_Solver <- function(pH, C_TOTCl2_mg_L, C_TOTCy_mg_L, temp) {
 #Define server logic required to run simulations and produce output
 server <- function(input, output, session) {
 
+  # Set option for sticky sessions
+  options("Set-Cookie" = paste0("JSESSIONID=", session$token))
+
   # Calculate estimated free chlorine concentration based on provided sample conditions
   output$sim <- reactive({do.call(Free_Solver, list(input$pH, input$C_TOTCl2_mg_L, input$C_TOTCy_mg_L, input$temp))})
 }
