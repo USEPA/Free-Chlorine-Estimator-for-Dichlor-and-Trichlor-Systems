@@ -1,7 +1,0 @@
----
-applications:
-- name: fcedts
-  memory: 200M
-  instances: 3
-  routes:
-  - route: fcedts.apps.internal
